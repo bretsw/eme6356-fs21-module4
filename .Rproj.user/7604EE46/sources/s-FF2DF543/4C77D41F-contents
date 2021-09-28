@@ -1,0 +1,416 @@
+---
+title: "Module 4: Social Media"
+subtitle: "EME6356: Learning & Web Analytics"
+author: "Dr. Bret Staudt Willet"
+date: "September 28, 2021"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: true
+    css: [default, 'custom.css', 'custom-fonts.css']
+    nature:
+      titleSlideClass: [left, bottom]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+usethis::use_git_ignore(c("*.csv", "*.rds"))
+options(htmltools.dir.version = FALSE)
+
+library(knitr)
+library(tidyverse)
+library(xaringan)
+library(fontawesome)
+```
+
+class: inverse, center, middle
+
+**View the slides:** 
+
+[bretsw.github.io/eme6356-module4](https://bretsw.github.io/eme6356-module4)
+
+---
+
+# Data stories
+
+```{r, out.width = "400px", echo = FALSE, fig.align = "center"}
+include_graphics("img/playground.jpg")
+```
+
+**Social media and students’ privacy: What schools and districts should know** ([Rosenberg et al., 2021](https://kappanonline.org/social-media-students-privacy-facebook-rosenberg/))
+
+> How widespread is the risk? We found that there have been a remarkable 18 million posts on Facebook from U.S. schools and school districts, and 9.3 million posts included one or more images (Burchfield et al., 2021). In our research, we randomly sampled 100 of these 9.3 million posts with images and found 187 student faces, five of which we could easily connect with student names.
+
+---
+
+class: inverse, center, middle
+
+# Module 3 Discussion <br> into Module 4
+
+---
+
+class: inverse, center, middle
+
+```{r, out.width = "480px", echo = FALSE, fig.align = "center"}
+include_graphics("img/sorry-meme.jpg")
+```
+
+--
+
+...for making another slide deck
+
+---
+
+class: inverse, center, middle
+
+#  Big Idea \#1: <br> Digital Traces
+
+---
+
+# Digital Traces
+
+```{r, out.width = "360px", echo = FALSE, fig.align = "center"}
+include_graphics("img/dust.jpg")
+```
+
+--
+
+> Each of these transactions leaves digital traces that can be compiled into comprehensive pictures of both individual and group behavior, with the potential to transform our understanding of our lives, organizations, and societies.
+
+(Lazer et al., 2009)
+
+
+---
+
+class: inverse, center, middle
+
+#  Big Idea \#2: <br> Start with Clear Questions
+
+---
+
+#  Start with Clear Questions
+
+```{r, out.width = "540px", echo = FALSE, fig.align = "center"}
+include_graphics("img/always-sunny-meme.jpg")
+```
+
+--
+
+What do we entrust data analytics to tell us? (`r fa("thumbs-up", fill = "#782F40")` Mark)
+
+--
+
+### `r fa("arrow-right", fill = "#782F40")` Benchmarks, feedback, remediation, sequencing, 
+
+---
+
+#  Start with Clear Questions
+
+```{r, out.width = "540px", echo = FALSE, fig.align = "center"}
+include_graphics("img/always-sunny-meme.jpg")
+```
+
+Are we over-reliant on analytics? (`r fa("thumbs-up", fill = "#782F40")` Aisha)
+
+--
+
+### `r fa("arrow-right", fill = "#782F40")` Clear questions
+
+---
+
+class: inverse, center, middle
+
+#  Big Idea \#3: <br> Stop with the Answers You Need
+
+---
+
+# The Answers You Need
+
+```{r, out.width = "540px", echo = FALSE, fig.align = "center"}
+include_graphics("img/more-cowbell-meme.jpg")
+```
+
+--
+
+How many are enough data? (`r fa("thumbs-up", fill = "#782F40")` Amy)
+
+--
+
+- Time constraints (`r fa("thumbs-up", fill = "#782F40")` Shané, Sean)
+
+--
+
+- Professional development needs (`r fa("thumbs-up", fill = "#782F40")` Jessica, Colleen)
+
+---
+
+# The Answers You Need
+
+```{r, out.width = "540px", echo = FALSE, fig.align = "center"}
+include_graphics("img/more-cowbell-meme.jpg")
+```
+
+Want data analytics to answer everything (`r fa("thumbs-up", fill = "#782F40")` Mark)
+
+--
+
+### `r fa("arrow-right", fill = "#782F40")` Answers I *want* vs. answers I *need* (`r fa("thumbs-up", fill = "#782F40")` Sean)
+
+---
+
+class: inverse, center, middle
+
+# Big Ideas 
+
+### 1. Digital Traces <br> 2. Start with Clear Questions <br> 3. Stop with the Answer You Need
+
+---
+
+class: inverse, center, middle
+
+# Recommendation \#1 <br> Human Approach
+
+---
+
+# Human Approach
+
+```{r, out.width = "480px", echo = FALSE, fig.align = "center"}
+include_graphics("img/teaching.jpg")
+```
+
+--
+
+- Foreground equity issues (`r fa("thumbs-up", fill = "#782F40")` Dré)
+
+--
+
+- Mitigate risks - something like HIPAA (`r fa("thumbs-up", fill = "#782F40")` Jessica)
+
+--
+
+- Examine assumptions - like *digital natives*
+
+---
+
+# Human Approach
+
+```{r, out.width = "480px", echo = FALSE, fig.align = "center"}
+include_graphics("img/teaching.jpg")
+```
+
+- Reframe Quantitative vs. Qualitative (`r fa("thumbs-up", fill = "#782F40")` Colleen)
+
+--
+
+- e.g., Analysis of textual data: human coding, topic models, [LIWC](https://liwc.wpengine.com/)
+
+--
+
+### `r fa("arrow-right", fill = "#782F40")` Better distinction: Machine vs. Human
+
+---
+
+class: inverse, center, middle
+
+# Recommendation \#2 <br> Holistic Approach
+
+---
+
+# Holistic Approach
+
+```{r, out.width = "600px", echo = FALSE, fig.align = "center"}
+include_graphics("img/network.jpg")
+```
+
+--
+
+- Think in terms of instructional **systems** (`r fa("thumbs-up", fill = "#782F40")` Aisha)
+
+--
+
+- Take into account context, designers, users, history, goals, inputs, outputs, etc.
+
+---
+
+class: inverse, center, middle
+
+# Big Ideas <br> and Recommendations
+
+---
+
+# Recap
+
+```{r, out.width = "320px", echo = FALSE, fig.align = "center"}
+include_graphics("img/puzzle-gap.jpg")
+```
+
+--
+
+### Big Ideas
+
+1. Digital Traces
+
+2. Start with Clear Questions
+
+3. Stop with the Answer You Need
+
+--
+
+### Recommendations
+
+1. Human Approach
+
+2. Holistic Approach
+
+---
+
+class: inverse, center, middle
+
+# Social Media Analytics <br> Demos
+
+---
+
+# 1. Google Analytics
+
+```{r, out.width = "100%", echo = FALSE, fig.align = "center"}
+include_graphics("img/google-analytics.png")
+```
+
+[Google Analytics dashboard](https://analytics.google.com/analytics/web/)
+
+---
+
+# 2. Google BigQuery
+
+```{r, out.width = "100%", echo = FALSE, fig.align = "center"}
+include_graphics("img/google-bigquery.png")
+```
+
+[Google BigQuery dashboard](https://console.cloud.google.com/bigquery)
+
+---
+
+# 3. Webpage JSON
+
+```{r, out.width = "100%", echo = FALSE, fig.align = "center"}
+include_graphics("img/webpage-json.png")
+```
+
+[Reddit r/Teachers JSON](https://www.reddit.com/r/Teachers.json)
+
+---
+
+# 4. Reddit API
+
+```{r, out.width = "100%", echo = FALSE, fig.align = "center"}
+include_graphics("img/reddit-api.png")
+```
+
+[Reddit API](https://github.com/bretsw/reddit-covid/blob/main/local-functions.R)
+
+---
+
+# 5. Twitter Dashboard
+
+```{r, out.width = "600px", echo = FALSE, fig.align = "center"}
+include_graphics("img/twitter-dashboard.png")
+```
+
+[Social Media Lab Twitter Dashboard](https://dashboard.socialmediadata.org/educhat/)
+
+---
+
+# 6. TAGS
+
+```{r, out.width = "100%", echo = FALSE, fig.align = "center"}
+include_graphics("img/tags-tracker.png")
+```
+
+[Twitter Archiving Google Sheet (TAGS)](https://tags.hawksey.info/)
+
+[TAGS collector for conference tweets](https://bit.ly/aect19tracker)
+
+---
+
+# 7. Twitter Academic API
+
+[Twitter API for Academic Research](https://developer.twitter.com/en/products/twitter-api/academic-research)
+
+```{r, eval=FALSE}
+library(academictwitteR)
+library(tidytags)
+
+tweets_json <- 
+  academictwitteR::get_all_tweets(
+    query = "#fledchat",
+    n = 1500000,
+    page_n = 500,
+    start_tweet = "2006-03-21T00:00:00Z", 
+    end_tweets = Sys.time(),
+    bearer_token = Sys.getenv("TWITTER_BEARER_TOKEN"), 
+    data_path = "data/"
+  )
+
+tweets_tidy <- 
+  academictwitteR::bind_tweets(data_path = "data/", 
+                               output_format = "tidy")
+
+edchat_tweets <- 
+  tidytags::lookup_many_tweets(tweets_tidy$tweet_id)
+```
+
+---
+
+class: inverse, center, middle
+
+# Your Interests
+
+---
+
+class: inverse, center, middle
+
+<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://fsu.padlet.org/embed/xqug6vu51yfxwrc5" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:480px;display:block;padding:0;margin:0"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
+
+---
+
+class: inverse, center, middle
+
+# Looking ahead
+
+---
+
+# Semester schedule
+
+```{r, out.width = "480px", echo = FALSE, fig.align = "center"}
+include_graphics("img/across-time.jpg")
+```
+
+- Module 5: Data Visualization
+
+- Module 6: Educational Data Mining and Learning Analytics
+
+- Module 7: Challenges in Learning Analytics
+
+- Module 8: Case Discussions
+
+- Module 9: Future of Analytics
+
+---
+
+class: inverse, center, middle
+
+# Questions?
+
+```{r, out.width = "480px", echo = FALSE, fig.align = "center"}
+include_graphics("img/question.jpg")
+```
+
+**What questions can I answer for you now?**
+
+**How can I support you this week?**
+
+<hr>
+
+`r fa("envelope", fill = "white")` [bret.staudtwillet@fsu.edu](mailto:bret.staudtwillet@fsu.edu) | `r fa("twitter", fill = "white")` [@bretsw](https://twitter.com/bretsw) | `r fa("globe", fill = "white")` [bretsw.com](http://bretsw.com)
